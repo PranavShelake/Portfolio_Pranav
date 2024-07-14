@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Pranav</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" href="image\icon.png" type="image/png">
+</head>
+
+<body style="max-width: 1330px;margin: 0 auto;">
+    <header>
+        <div class="nav-bar">
+            <div class="name">Pranav Shelake</div>
+            <div class="pages">
+                <a class=" border" href="#">Home</a>
+                <a class=" border" href="#">Resume</a>
+                <a class=" border" href="#">Project</a>
+                <a class=" border" href="#">Contact Me</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="message">
+                <p style="font-size:1.5rem;background-color: transparent;">Hello,</p>
+                <p style="background-color: transparent;">I'm Pranav Shelake </p>
+                <span id="typing-animation"></span>
+            </div>
+            <img src="image/pranav.jpg" class="profile" alt="profile">
+        </div>
+
+        <div class="Information ">
+
+            <div class="about-me">
+                <h2 style="margin-left:40% ; ">About ME</h2>
+                <p class="para">I am Pranav Shelake, a third-year student at Kolhapur Institute of Technology's College
+                    of Engineering, Kolhapur, pursuing Computer Science & Engineering (CSE). I enjoy working on a
+                    variety of projects. Adaptable and able to work well under pressure. Personality with strong
+                    interpersonal skills.
+                </p>
+            </div>
+            <div class="skill">
+                <h2 style="margin-left:45% ;">Skills</h2>
+                <div class="skill-box">
+                    <p class="skill-name">C</p>
+                    <p class="skill-name">C++</p>
+                    <p class="skill-name">Python</p>
+                    <p class="skill-name">Sql</p>
+                </div>
+                <div class="skill-box">
+                    <p class="skill-name">HTML</p>
+                    <p class="skill-name">CSS</p>
+                    <p class="skill-name">Javascript</p>
+                    <p class="skill-name">Django</p>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="project">
+            <h2 style="margin-left:47%; margin-bottom: 10px;">Project</h2>
+            <hr style="margin-bottom: 10px;">
+            <div class="field">
+                <div class="WD" onclick="toggleDropdown('webdev-dropdown', this)">
+                    Web Development
+                    <i class="fas fa-angle-down"></i>
+                    <div class="dropdown-content" id="webdev-dropdown">
+                        <div class="box" onclick="toggleDropdown('webdev-game-info', this)">
+                            zero-cross
+                            <i class="fas fa-plus"></i>
+                            <div class="dropdown-content" id="webdev-game-info">
+                                <p>Zero-cross game info...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ML" onclick="toggleDropdown('ml-dropdown', this)">
+                    Machine Learning
+                    <i class="fas fa-angle-down"></i>
+                    <div class="dropdown-content" id="ml-dropdown">
+                        <div class="box" onclick="toggleDropdown('ml-project-info', this)">
+                            moodtune
+                            <i class="fas fa-plus"></i>
+                            <div class="dropdown-content" id="ml-project-info">
+                                <p>Moodtune project info...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="CC" onclick="toggleDropdown('cc-dropdown', this)">
+                    C/C++
+                    <i class="fas fa-angle-down"></i>
+                    <div class="dropdown-content" id="cc-dropdown">
+                        <div class="box" onclick="toggleDropdown('cc-project-info', this)">
+                            zero-cross
+                            <i class="fas fa-plus"></i>
+                            <div class="dropdown-content" id="cc-project-info">
+                                <p>Zero-cross C/C++ project info...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="education">
+            <h2 style="margin-left:45%; margin-bottom: 10px;">Education</h2>
+            <hr style="margin-bottom: 10px;">
+            <div class="education-field">
+                <div class="education-box">
+                    <h2>Graduation (2021-2025)</h2>
+                    <div class="college">
+                        <p>Kolhapur institute of technology's college of engineering
+                            (autonomous)</p>
+                        <p>B.Tech in CSE 7.14 CGPA</p>
+                    </div>
+                </div>
+                <div class="education-box">
+                    <h2>Higher Secondary School(2019-2020) </h2>
+                    <div class="hss">
+                        <p>Kendriya vidyalaya no -2</p>
+                        <p>CBSE (PCM) 72.6%</p>
+                    </div>
+                </div>
+                <div class="education-box">
+                    <h2>Secondary Schools (2017-2018)</h2>
+                    <div class="scc">
+                        <p>Army Public School , Gopalpur , Odisha</p>
+                        <p>77%</p>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="space"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

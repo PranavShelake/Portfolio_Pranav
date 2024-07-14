@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    position: fixed;
+    inset: 5px;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    color: white;
+    background-color: #0F1111;
+}
+
+
+
+.name {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    font-size: 1.5rem;
+}
+
+.pages{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pages a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px; 
+}
+
+.border:hover {
+    border-radius: 10%;
+    outline: 3px solid blueviolet;
+    background-color: blueviolet;
+    outline-offset: 3px;
+}
+
+.hero {
+    height: 250px;
+    width: 100%;
+    margin-top: 60px;
+    background-color: #0f111196;
+    display: flex;
+    justify-content: space-around;
+} 
+
+.message {
+    margin-top: 80px;
+    font-size: 3rem;
+    width: 60%;
+}
+
+
+#typing-animation {
+    font-size: 3.5rem;
+    color: violet;
+}
+
+
+
+.profile{
+    margin-top: 20px;
+    border-radius: 50%;
+
+}
+
+.Information{
+    display: flex;    
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.about-me{
+    width: 50%;
+    
+    padding: 10px;
+    background-color: aquamarine;
+}
+.about-me .para{
+    margin: 10px;
+}   
+.skill {
+    height: auto; 
+    width: 40%;
+    padding: 10px;
+    background-color: aquamarine;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill-name {
+    margin: 10px;
+    max-width: 100%; 
+}
+.project, .education{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.field , .education-box{
+    width: 100%;
+    background-color: aqua;
+    padding: 10px;
+}
+
+.WD, .ML, .CC {
+    position: relative;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding:20px;
+    cursor: pointer;
+}
+
+.WD .box, .ML .box, .CC .box {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.WD i, .ML i, .CC i {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.box i {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    margin-left: 20px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.box p {
+    margin-top: 10px;
+}
+
+
+.education-field{
+    display: flex;
+    text-align: center; 
+}
+
+.education-box{
+    font-size: 0.9rem;
+}
+
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: brown;
+}
+.space{
+    height: 1000px;
+    width: 100%;
+}
