@@ -15,106 +15,129 @@
     color: white;
     background-color: #0F1111;
 }
-
-
-
 .name {
     display: flex;
     justify-content: center;
     width: 30%;
     font-size: 1.5rem;
 }
-
 .pages{
     width: 50%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
-
 .pages a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
     padding: 5px 10px; 
 }
-
 .border:hover {
-    border-radius: 10%;
+    border-radius: 5%;
     outline: 3px solid blueviolet;
     background-color: blueviolet;
     outline-offset: 3px;
 }
 
+
+
 .hero {
     height: 250px;
     width: 100%;
     margin-top: 60px;
-    background-color: #0f111196;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
+    background-color: rgb(177, 107, 16);
 } 
-
 .message {
     margin-top: 80px;
     font-size: 3rem;
     width: 60%;
 }
-
-
 #typing-animation {
     font-size: 3.5rem;
-    color: violet;
-}
-
-
-
-.profile{
-    margin-top: 20px;
-    border-radius: 50%;
-
-}
-
-.Information{
-    display: flex;    
-    margin-top: 30px;
-    justify-content: space-around;
-}
-.about-me{
-    width: 50%;
     
-    padding: 10px;
-    background-color: aquamarine;
 }
-.about-me .para{
-    margin: 10px;
-}   
-.skill {
-    height: auto; 
-    width: 40%;
-    padding: 10px;
-    background-color: aquamarine;
+.profile{
+    padding: 20px;
+    
 }
 
+
+
+.about-me{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(215, 250, 220);
+}
+.about-me hr,h2{    
+    margin-bottom: 10px;
+}
+.about-me h2{
+    text-align: center; 
+}
+
+
+
+.skills-and-tool{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.skills-and-tool h2{
+    text-align: center; 
+}
+.skill{
+    width: 55%;
+}
+.skill h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.tool{
+    
+    width: 40%;
+}
+.skill,.tool{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+}
+.skill hr,h2 ,.tool hr,h2{
+    margin-bottom: 10px;
+}
 .skill-box {
     display: flex;
-    justify-content: space-around;
+    margin-left: 20px;
     align-items: center;
     flex-wrap: wrap;
 }
-
-.skill-name {
-    margin: 10px;
-    max-width: 100%; 
+.skill p{
+    margin-left: 15px ;
+    margin-bottom: 15px;
 }
-.project, .education{
+.tool p{
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+
+/* .project, .education{
     width: 100%;
     margin: 0 auto;
     padding: 20px;
+    background-color: rgb(215, 227, 250);
 }
 
 .field , .education-box{
     width: 100%;
-    background-color: aqua;
     padding: 10px;
 }
 
@@ -158,17 +181,110 @@
 }
 
 
-.education-field{
-    display: flex;
+
+
+ */
+
+
+.certificate{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(11, 185, 55);
+}
+.certificate hr,h2{    
+    margin-bottom: 10px;
+}
+.certificate h2{
     text-align: center; 
 }
 
+.cetificate-box{
+    padding: 20px;
+}
+
+.education{
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+}
+.education-field{
+    padding: 20px;
+    display: flex;
+    text-align: center; 
+    justify-content: space-between;
+}
 .education-box{
     font-size: 0.9rem;
+}
+.education-box p{
+    margin-bottom: 10px;
+}
+
+
+.question{
+    margin-bottom: 20px;
+    margin-left: 25%;
+    width: 50%;
+}
+.question h2{
+    text-align: center; 
+}
+.question hr,h2{
+    margin-bottom: 10px;
+}
+.message-box {
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+input, textarea  {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+}
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 10px;
+    width: 50%;
+}
+button:hover {
+    background-color: #555;
 }
 
 
 
+.footer-box{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+
+.footer-subbox a{
+    text-decoration: none;
+    color: black;
+}
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -177,8 +293,4 @@
 }
 ::-webkit-scrollbar-thumb {
     background-color: brown;
-}
-.space{
-    height: 1000px;
-    width: 100%;
 }
