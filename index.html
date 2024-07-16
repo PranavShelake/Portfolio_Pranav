@@ -22,11 +22,12 @@
                     target="_blank" class=" border">Resume</a>
                 <a class=" border" href="#">Project</a>
                 <a class=" border" href="#">Contact Me</a>
-                <p><i class="fa-solid fa-toggle-off"></i>Light mode</p>
-                <i class="fa-solid fa-toggle-on"></i>
+                <p><i class="fa-solid fa-toggle-off" id="switchmode" onclick="switchmode()"></i>Light mode</p>
+                <!-- <i class="fa-solid fa-toggle-on"></i> -->
             </div>
         </div>
     </header>
+    
     <main>
         <div class="hero">
             <div class="message">
@@ -55,6 +56,7 @@
                     <p class="skill-name">C</p>
                     <p class="skill-name">C++</p>
                     <p class="skill-name">Python</p>
+                    <p class="skill-name">Git and GitHub</p>
                 </div>
                 <h3>Web Developement</h3>
                 <div class="skill-box">
@@ -81,52 +83,66 @@
                 <p>AutoCAD</p>
             </div>
         </div>
-
-        <!-- <div class="project">
-            <h2 style="text-align: center; margin-bottom: 10px;">Project</h2>
-            <hr style="margin-bottom: 10px;">
-            <div class="field">
-                <div class="WD" onclick="toggleDropdown('webdev-dropdown', this)">
+        
+        <div class="project">
+            <h2>Project</h2>
+            <hr>
+            <div class="project-field" onclick="toggleDropdown('web', this)">
                     Web Development
                     <i class="fas fa-angle-down"></i>
-                    <div class="dropdown-content" id="webdev-dropdown">
-                        <div class="box" onclick="toggleDropdown('webdev-game-info', this)">
-                            zero-cross
+                    <div class="project-field-dropdown" id="web">
+                        <div class="box" onclick="toggleDropdown('amazone', this)">
+                            Amazone clone
                             <i class="fas fa-plus"></i>
-                            <div class="dropdown-content" id="webdev-game-info">
+                            <div class="project-field-dropdown" id="amazone">
                                 <p>Zero-cross game info...</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="ML" onclick="toggleDropdown('ml-dropdown', this)">
-                    Machine Learning
-                    <i class="fas fa-angle-down"></i>
-                    <div class="dropdown-content" id="ml-dropdown">
-                        <div class="box" onclick="toggleDropdown('ml-project-info', this)">
-                            moodtune
+                        <div class="box" onclick="toggleDropdown('ttt', this)">
+                            Tic Tac Toe 
                             <i class="fas fa-plus"></i>
-                            <div class="dropdown-content" id="ml-project-info">
-                                <p>Moodtune project info...</p>
+                            <div class="project-field-dropdown" id="ttt">
+                                <p>Tic Tac Toe</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="CC" onclick="toggleDropdown('cc-dropdown', this)">
+                <div class="project-field" onclick="toggleDropdown('ml', this)">
+                    Machine Learning
+                    <i class="fas fa-angle-down"></i>
+                    <div class="project-field-dropdown" id="ml">
+                        <div class="box" onclick="toggleDropdown('moodtune', this)">
+                            Moodtune
+                            <i class="fas fa-plus"></i>
+                            <div class="project-field-dropdown" id="moodtune">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, error quia ducimus corporis deleniti eligendi atque placeat odio! Fuga saepe inventore sapiente quibusdam consectetur voluptas numquam, expedita dolore. Maxime, nihil!
+                                Eligendi accusantium alias sunt doloremque possimus odit dolorum modi explicabo deserunt rem aliquam, quia eius magnam iusto! Aperiam similique assumenda perspiciatis provident deleniti, aliquid enim, iusto ullam quisquam consequatur eveniet.0</p>
+                            </div>
+                        </div>
+                        <div class="box" onclick="toggleDropdown('paperchecker', this)">
+                            Automatic paper checker
+                            <i class="fas fa-plus"></i>
+                            <div class="project-field-dropdown" id="paperchecker">
+                                <p>checking Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nostrum, hic quo ad porro libero nobis quaerat asperiores laudantium saepe aliquam, qui, laborum voluptate repellat aspernatur voluptatibus delectus dolores vel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-field" onclick="toggleDropdown('c/c++', this)">
                     C/C++
                     <i class="fas fa-angle-down"></i>
-                    <div class="dropdown-content" id="cc-dropdown">
-                        <div class="box" onclick="toggleDropdown('cc-project-info', this)">
-                            zero-cross
+                    <div class="project-field-dropdown" id="c/c++">
+                        <div class="box" onclick="toggleDropdown('TTT', this)">
+                            Tic Tac Toe 
                             <i class="fas fa-plus"></i>
-                            <div class="dropdown-content" id="cc-project-info">
-                                <p>Zero-cross C/C++ project info...</p>
+                            <div class="project-field-dropdown" id="TTT">
+                                <p>Tic Tac Toe</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <div class="certificate">
             <h2>CERTIFICATIONS</h2>
@@ -176,7 +192,7 @@
                     <hr style="margin-bottom: 10px;">
                     <div class="scc">
                         <p>Army Public School, Gopalpur, Odisha</p>
-                        <p>CBSE : 77.3%</p> 
+                        <p>CBSE : 77.3%</p>
 
                     </div>
                 </div>
@@ -192,7 +208,7 @@
             <form method="post" enctype="multipart/form-data">
                 <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                 <input type="email" id="gmail" name="gmail" placeholder="Enter your Gmail" required>
-                <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+                <textarea id="message" name="message" placeholder="Enter your message" rows="4" required ></textarea>
                 <br>
                 <label for="file">Upload a file (PDF, IMAGE) here if need: </label>
                 <input type="file" id="file" name="file" accept=".pdf,.image" multiple>
@@ -202,26 +218,25 @@
     </div>
 
     <footer>
-        <h2 style="text-align: center; margin-bottom: 10px; padding-top: 20px;">Contact Me</h2>
-        <hr style="margin-bottom: 10px;">
-        <p style="margin-left:40%; margin-bottom: 20px;">Below are the details to reach out to me!</p>
-        <div class="footer-box">
-            <div class="footer-subbox">
-                <h3><i class="fa-solid fa-location-dot"></i> <a
-                        href="https://maps.app.goo.gl/9Xi2gXtdMenD6LfJ6">warananagar ,Kolhapur maharashtra</a></h3>
-            </div>
-            <div class="footer-subbox">
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <hr>
+            <p>Below are the details to reach out to me !</p>
+            <div class="contact-box">
                 <h3><i class="fa-solid fa-mobile-screen-button"></i> +918249816651</h3>
-            </div>
-            <div class="footer-subbox">
                 <h3><i class="fa-solid fa-envelope"></i> pranavshelake99@gmail.com</h3>
+                <h3>
+                    <i class="fa-solid fa-location-dot"></i> 
+                    <a href="https://maps.app.goo.gl/9Xi2gXtdMenD6LfJ6">Warananagar ,Kolhapur Maharashtra</a>
+                </h3>
             </div>
-            <div class="footer-subbox">
-                <h3></h3><i class="fa-solid fa-file"></i> <a
-                    href="https://drive.google.com/file/d/1KKAmcvBMXIa3eDvTAAELh_7IZn9vUCGw/view?usp=drive_link"
-                    target="_blank">Resume</a></h3>
+            <div class="contact-box" style="justify-content: center;">
+                <i class="fa-brands fa-square-instagram" style="padding:0px 20px; font-size: 1.5rem;"></i>
+                <i class="fa-brands fa-linkedin" style="padding:0px 20px; font-size: 1.5rem;"></i>
+                <i class="fa-solid fa-code" style="padding:0px 20px; font-size: 1.5rem;"></i>
             </div>
         </div>
+
     </footer>
     <script src="script.js"></script>
 </body>
