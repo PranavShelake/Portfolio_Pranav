@@ -56,3 +56,4 @@ function toggleDropdown(id, element) {
         icon.classList.toggle('fa-plus', isOpen);
     }
 }
+

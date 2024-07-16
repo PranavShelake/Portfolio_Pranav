@@ -4,7 +4,18 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    max-width: 1330px;
+    margin: 0 auto;
+    background-color:#01101D ;
+    color: #F1FFFA;
+    font-size: 1rem;
+}
 
+/* body{
+    background-color: #F6F7F8;
+    color: #2EC4B6;
+} */
 .nav-bar {
     display: flex;
     position: fixed;
@@ -12,8 +23,7 @@
     justify-content: space-around;
     align-items: center;
     height: 50px;
-    color: white;
-    background-color: #0F1111;
+    background-color: #011627;
     z-index: 10;
 }
 .name {
@@ -29,15 +39,15 @@
     align-items: center;
 }
 .pages a {
-    color: white;
+    color: #F1FFFA;
     text-decoration: none;
     font-size: 1rem;
     padding: 5px 10px; 
 }
 .border:hover {
     border-radius: 5%;
-    outline: 3px solid blueviolet;
-    background-color: blueviolet;
+    outline: 3px solid #3F4F5C;
+    background-color: #3F4F5C;
     outline-offset: 3px;
 }
 
@@ -59,6 +69,7 @@
 }
 #typing-animation {
     font-size: 3.5rem;
+    color: #5dad62;
 }
 .profile{
     width: 20%;
@@ -69,27 +80,26 @@
 
 .about-me{
     padding: 20px;
+    background-color: #0D2232;
     margin-bottom: 20px;
 }
-.about-me hr,h2{    
-    margin-bottom: 10px;
-}
-.about-me h2{
-    text-align: center; 
-}
+
 
 
 
 .skills-and-tool{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-}
-.skills-and-tool h2{
-    text-align: center; 
+    margin-bottom: 20px;
 }
 .skill{
+    background-color: #0D2232;
     width: 55%;
+}
+.tool{
+    background-color: #0D2232;
+    align-self: self-start;
+    width: 40%;
 }
 .skill h3{
     font-size: 1.2rem;
@@ -97,15 +107,8 @@
     margin-bottom: 10px;
     margin-left: 5px;
 }
-.tool{
-    width: 40%;
-}
 .skill,.tool{
     padding: 20px;
-    margin-bottom: 20px;
-}
-.skill hr,h2 ,.tool hr,h2{
-    margin-bottom: 10px;
 }
 .skill-box {
     display: flex;
@@ -114,12 +117,12 @@
     flex-wrap: wrap;
 }
 .skill p{
-    margin-left: 15px ;
+    margin-left: 25px ;
     margin-bottom: 15px;
 }
 .tool p{
-    margin-left: 5px;
-    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -127,18 +130,13 @@
 
 .project{
     padding: 20px;
+    background-color: #0D2232;
     margin-bottom: 20px;
-}
-.project h2{
-    text-align: center;
-}
-.project hr,h2{
-    margin-bottom: 10px;
 }
 .project-field {
     position: relative;
-    font-size: 2rem;
-    padding:10px;
+    font-size: 1.5rem;
+    padding:15px;
     cursor: pointer;
 }
 .project-field i{
@@ -158,6 +156,9 @@
 .project-field .box i{
     right: 40px;
 }
+.box{
+    margin-bottom: 20px;
+}
 .box p{
     padding:0px 20px 0px 20px;
     margin-bottom: 20px;
@@ -173,15 +174,9 @@
 
 .certificate{
     padding: 20px;
+    background-color: #0D2232;
     margin-bottom: 20px;
 }
-.certificate hr,h2{    
-    margin-bottom: 10px;
-}
-.certificate h2{
-    text-align: center; 
-}
-
 .cetificate-box{
     padding: 20px;
 }
@@ -190,15 +185,18 @@
 
 .education{
     padding: 20px;
+    background-color: #0D2232;
     margin-bottom: 20px;
 }
 .education-field{
-    padding: 20px;
+    padding-top: 20px;
     display: flex;
     text-align: center; 
-    justify-content: space-between;
+    
+    justify-content: space-evenly;
 }
 .education-box{
+    width: 30%;
     font-size: 0.9rem;
 }
 .education-box p{
@@ -208,16 +206,11 @@
 
 
 .question{
+    background-color: #0D2232;
     margin-bottom: 20px;
     margin-left: 25%;
     width: 50%;
     padding: 20px;
-}
-.question h2{
-    text-align: center; 
-}
-.question hr,h2{
-    margin-bottom: 10px;
 }
 .message-box {
     padding: 20px;
@@ -244,8 +237,8 @@ input, textarea  {
 }
 button {
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: #8bfc89;
+    color: F1FFFA;
     border: none;
     border-radius: 5px;
     font-size: 20px;
@@ -255,17 +248,16 @@ button {
     width: 50%;
 }
 button:hover {
-    background-color: #555;
+    background-color: #45fc42;
 }
+
+
 
 
 .contact{
     padding: 20px;
     margin-bottom: 20px;
-}
-.contact h2,hr{
-    text-align: center;
-    margin-bottom: 10px; 
+    background-color: #0D2232;
 }
 .contact-box{
     display: flex;
@@ -274,7 +266,7 @@ button:hover {
 }
 .contact a{
     text-decoration: none;
-    color: black;
+    color: #F1FFFA;
 }
 .contact p{
     text-align: center; 
@@ -283,6 +275,18 @@ button:hover {
 
 
 
+
+h2{
+    color: #5dad62;
+    text-align: center;
+}
+hr{ 
+    padding-bottom: 2px;
+    text-align: center;
+    margin-bottom: 10px; 
+    margin-top: 10px; 
+    background-color: #DDD1C7;
+}
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -290,5 +294,5 @@ button:hover {
     background-color: white;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: brown;
+    background-color:#0D2232 ;
 }
