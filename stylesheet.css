@@ -4,18 +4,74 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+
+
+
+
+.night {
     max-width: 1330px;
     margin: 0 auto;
-    background-color:#01101D ;
+    background-color: #01101D;
     color: #F1FFFA;
     font-size: 1rem;
+
+    .container {
+        background-color: #0D2232;
+    }
+
+    .nav-bar {
+        background-color: #011627;
+    }
+
+    .border:hover {
+        background-color: #0B7A75;
+    }
+
+    .pages a {
+        color: #F1FFFA;
+    }
+
+    hr {
+        background-color: #DDD1C7;
+    }
+
+    .contact-box a {
+        color: #F1FFFA;
+    }
 }
 
-/* body{
-    background-color: #F6F7F8;
-    color: #2EC4B6;
-} */
+.day {
+    max-width: 1330px;
+    margin: 0 auto;
+    background-color: white;
+    color: #030303;
+    font-size: 1rem;
+
+    .container {
+        background-color: #e6e6e6;
+        box-shadow: 0 0 10px rgba(10, 10, 10, 0.1);
+    }
+
+    .nav-bar {
+        color: #5dad62;
+        background-color: #ffffff;
+    }
+    .border:hover {
+        background-color: #e6e6e6;
+    }
+    hr {
+        background-color: #3f3f3f;
+    }
+    a {
+        text-decoration: none;
+        color: #5dad62;
+    }
+    .contact-box a {
+        color: #080808;
+    }
+}
+
 .nav-bar {
     display: flex;
     position: fixed;
@@ -23,31 +79,33 @@ body{
     justify-content: space-around;
     align-items: center;
     height: 50px;
-    background-color: #011627;
     z-index: 10;
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.1);
 }
+
 .name {
     display: flex;
     justify-content: center;
     width: 30%;
     font-size: 1.5rem;
 }
-.pages{
+
+.pages {
     width: 50%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.pages a {
-    color: #F1FFFA;
+
+.pages a,p {
     text-decoration: none;
     font-size: 1rem;
-    padding: 5px 10px; 
+    padding: 5px 10px;
 }
+
 .border:hover {
+    outline: 3px solid #5dad62;
     border-radius: 5%;
-    outline: 3px solid #3F4F5C;
-    background-color: #3F4F5C;
     outline-offset: 3px;
 }
 
@@ -61,109 +119,124 @@ body{
     margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
-} 
+}
+
 .message {
     margin-top: 80px;
-    font-size: 3rem;
     width: 60%;
 }
+
 #typing-animation {
     font-size: 3.5rem;
+    margin-left: 12px;
     color: #5dad62;
 }
-.profile{
+
+.profile {
     width: 20%;
-    padding: 20px;  
+    padding: 20px;
 }
 
 
 
-.about-me{
+.about-me {
     padding: 20px;
-    background-color: #0D2232;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
 
 
 
-.skills-and-tool{
+.skills-and-tool {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.skill{
-    background-color: #0D2232;
+
+.skill {
     width: 55%;
 }
-.tool{
-    background-color: #0D2232;
+
+.tool {
     align-self: self-start;
     width: 40%;
 }
-.skill h3{
-    font-size: 1.2rem;
+
+.skill h3 {
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 10px;
     margin-left: 5px;
 }
-.skill,.tool{
+
+.skill,
+.tool {
     padding: 20px;
 }
+
 .skill-box {
     display: flex;
     margin-left: 20px;
+    font-size: 1.5rem;
     align-items: center;
     flex-wrap: wrap;
 }
-.skill p{
-    margin-left: 25px ;
+
+.skill p {
+    margin-left: 25px;
     margin-bottom: 15px;
 }
-.tool p{
+
+.tool p {
     margin-left: 10px;
     margin-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 
-.project{
+.project {
     padding: 20px;
-    background-color: #0D2232;
     margin-bottom: 20px;
 }
+
 .project-field {
     position: relative;
     font-size: 1.5rem;
-    padding:15px;
+    padding: 15px;
     cursor: pointer;
 }
-.project-field i{
+
+.project-field i {
     position: absolute;
     right: 10px;
     cursor: pointer;
 }
+
 .project-field-dropdown {
     display: none;
-    padding: 10px;  
+    padding: 10px;
     margin: 0px 20px 0px 20px;
 }
-.project-field-dropdown i{
+
+.project-field-dropdown i {
     position: absolute;
     cursor: pointer;
 }
-.project-field .box i{
+
+.project-field .box i {
     right: 40px;
 }
-.box{
-    margin-bottom: 20px;
-}
-.box p{
-    padding:0px 20px 0px 20px;
+
+.box {
     margin-bottom: 20px;
 }
 
+.box p {
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 20px;
+}
 
 
 
@@ -172,69 +245,77 @@ body{
 
 
 
-.certificate{
+
+.certificate {
     padding: 20px;
-    background-color: #0D2232;
     margin-bottom: 20px;
 }
-.cetificate-box{
+
+.cetificate-box {
     padding: 20px;
 }
 
 
 
-.education{
+.education {
     padding: 20px;
-    background-color: #0D2232;
     margin-bottom: 20px;
 }
-.education-field{
+
+.education-field {
     padding-top: 20px;
     display: flex;
-    text-align: center; 
-    
+    text-align: center;
+
     justify-content: space-evenly;
 }
-.education-box{
+
+.education-box {
     width: 30%;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
-.education-box p{
+
+.education-box p {
     margin-bottom: 10px;
 }
 
 
 
-.question{
-    background-color: #0D2232;
+.question {
     margin-bottom: 20px;
     margin-left: 25%;
     width: 50%;
     padding: 20px;
 }
+
 .message-box {
     padding: 20px;
     border-radius: 10px;
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     margin-left: 5px;
 }
+
 label {
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 20px;
 }
-input, textarea  {
+
+input,
+textarea {
     margin-bottom: 15px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 20px;
 }
+
 button {
     padding: 10px;
     background-color: #8bfc89;
@@ -247,6 +328,7 @@ button {
     margin-top: 10px;
     width: 50%;
 }
+
 button:hover {
     background-color: #45fc42;
 }
@@ -254,45 +336,49 @@ button:hover {
 
 
 
-.contact{
+.contact {
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #0D2232;
 }
-.contact-box{
+
+.contact-box {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-bottom: 20px;
 }
-.contact a{
+
+.contact a {
     text-decoration: none;
-    color: #F1FFFA;
 }
-.contact p{
-    text-align: center; 
+
+.contact p {
+    text-align: center;
     margin-bottom: 20px;
 }
 
 
 
 
-h2{
+h2 {
     color: #5dad62;
     text-align: center;
 }
-hr{ 
+
+hr {
     padding-bottom: 2px;
     text-align: center;
-    margin-bottom: 10px; 
-    margin-top: 10px; 
-    background-color: #DDD1C7;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 10px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background-color: white;
 }
+
 ::-webkit-scrollbar-thumb {
-    background-color:#0D2232 ;
+    background-color: #0D2232;
 }

@@ -37,23 +37,38 @@ playTypingAnimation(typingTexts[0]);
 
 
 function toggleDropdown(id, element) {
-    // Prevent the event from bubbling up to the parent elements
-    event.stopPropagation();
+  // Prevent the event from bubbling up to the parent elements
+  event.stopPropagation();
 
-    var content = document.getElementById(id);
-    var isOpen = content.style.display === "block";
+  var content = document.getElementById(id);
+  var isOpen = content.style.display === "block";
 
-    // Toggle visibility
-    content.style.display = isOpen ? "none" : "block";
+  // Toggle visibility
+  content.style.display = isOpen ? "none" : "block";
 
-    // Change the icon
-    var icon = element.querySelector('i');
-    if (icon.classList.contains('fa-angle-down') || icon.classList.contains('fa-angle-up')) {
-        icon.classList.toggle('fa-angle-up', !isOpen);
-        icon.classList.toggle('fa-angle-down', isOpen);
-    } else if (icon.classList.contains('fa-plus') || icon.classList.contains('fa-minus')) {
-        icon.classList.toggle('fa-minus', !isOpen);
-        icon.classList.toggle('fa-plus', isOpen);
-    }
+  // Change the icon
+  var icon = element.querySelector('i');
+  if (icon.classList.contains('fa-angle-down') || icon.classList.contains('fa-angle-up')) {
+    icon.classList.toggle('fa-angle-up', !isOpen);
+    icon.classList.toggle('fa-angle-down', isOpen);
+  } else if (icon.classList.contains('fa-plus') || icon.classList.contains('fa-minus')) {
+    icon.classList.toggle('fa-minus', !isOpen);
+    icon.classList.toggle('fa-plus', isOpen);
+  }
 }
 
+function switchmode() {
+
+  let switchmode = document.querySelector("body");
+  // let button=document.querySelector("#button");
+  let mode = switchmode.getAttribute("class");
+  if(mode=="night"){
+    mode="day";
+    button.setAttribute("class","fa-solid fa-toggle-off");
+  }
+  else{
+    mode="night";
+    button.setAttribute("class","fa-solid fa-toggle-on");
+  }
+  switchmode.setAttribute("class",mode);
+}
