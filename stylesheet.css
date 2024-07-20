@@ -104,6 +104,7 @@
 }
 
 .border:hover {
+    transition : all 0.3s ease-in;
     outline: 3px solid #5dad62;
     border-radius: 5%;
     outline-offset: 3px;
@@ -330,7 +331,10 @@ button {
 }
 
 button:hover {
-    background-color: #45fc42;
+    outline: 5px solid #5dad62;
+    outline-offset: 5px;
+    transition : all 0.3s linear;
+    background-color: #33fd30;
 }
 
 
