@@ -39,6 +39,10 @@
     .contact-box a {
         color: #F1FFFA;
     }
+    svg{
+        width: 25px;
+        fill: #F1FFFA;
+    }
 }
 
 .day {
@@ -70,6 +74,15 @@
     .contact-box a {
         color: #080808;
     }
+
+    svg{
+        
+        width: 25px;
+        fill: #080808;
+    }
+    .pages svg{
+        fill: #5dad62;
+    }
 }
 
 .nav-bar {
@@ -91,6 +104,7 @@
 }
 
 .pages {
+    font-weight: 600;
     width: 50%;
     display: flex;
     justify-content: space-evenly;
@@ -102,7 +116,12 @@
     font-size: 1rem;
     padding: 5px 10px;
 }
-
+.pages p{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+}
 .border:hover {
     transition : all 0.3s ease-in;
     outline: 3px solid #5dad62;
@@ -209,7 +228,7 @@
     cursor: pointer;
 }
 
-.project-field i {
+.project-field svg {
     position: absolute;
     right: 10px;
     cursor: pointer;
@@ -221,12 +240,12 @@
     margin: 0px 20px 0px 20px;
 }
 
-.project-field-dropdown i {
+.project-field-dropdown svg {
     position: absolute;
     cursor: pointer;
 }
 
-.project-field .box i {
+.project-field .box svg {
     right: 40px;
 }
 
@@ -360,6 +379,12 @@ button:hover {
     margin-bottom: 20px;
 }
 
+.contact-box h3{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+}
 
 
 
