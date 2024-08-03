@@ -370,7 +370,7 @@ button:hover {
     padding-bottom: 20px;
 }
 
-.contact a {
+.contact-box a {
     text-decoration: none;
 }
 
@@ -399,6 +399,11 @@ hr {
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 ::-webkit-scrollbar {
     width: 10px;
