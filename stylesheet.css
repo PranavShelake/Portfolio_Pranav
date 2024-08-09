@@ -36,8 +36,9 @@
         background-color: #DDD1C7;
     }
 
-    .contact-box a {
+    .contact-box a{
         color: #F1FFFA;
+        text-decoration: none;
     }
     svg{
         width: 25px;
@@ -71,7 +72,8 @@
         text-decoration: none;
         color: #5dad62;
     }
-    .contact-box a {
+    .contact-box a{
+        text-decoration: none;
         color: #080808;
     }
 
@@ -161,7 +163,7 @@
 
 .about-me {
     padding: 20px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
@@ -198,12 +200,13 @@
 .skill-box {
     display: flex;
     margin-left: 20px;
-    font-size: 1.5rem;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .skill p {
+    
+    font-size: 1.5rem;
     margin-left: 25px;
     margin-bottom: 15px;
 }
@@ -223,9 +226,14 @@
 
 .project-field {
     position: relative;
+    font-weight: 600;
     font-size: 1.5rem;
-    padding: 15px;
+    padding: 10px;
     cursor: pointer;
+    margin-bottom: 10px;
+}
+:hover.outline{
+    outline: 2px solid #0B7A75;
 }
 
 .project-field svg {
@@ -237,7 +245,7 @@
 .project-field-dropdown {
     display: none;
     padding: 10px;
-    margin: 0px 20px 0px 20px;
+    font-weight: 300;
 }
 
 .project-field-dropdown svg {
@@ -250,14 +258,19 @@
 }
 
 .box {
-    margin-bottom: 20px;
+    padding: 10px;
 }
 
-.box p {
-    padding: 0px 20px 0px 20px;
-    margin-bottom: 20px;
+.box p{
+    font-size: 1.5rem;
 }
 
+.box a { 
+    color: #5dad62;
+    padding-left: 10px;
+    text-decoration:underline ;
+    font-weight: 600;
+}
 
 
 
@@ -274,7 +287,9 @@
 .cetificate-box {
     padding: 20px;
 }
-
+.cetificate-box p{
+    font-size: 1.3rem;
+}
 
 
 .education {
@@ -296,6 +311,7 @@
 }
 
 .education-box p {
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
@@ -342,7 +358,7 @@ button {
     color: F1FFFA;
     border: none;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 1.5rem;
     cursor: pointer;
     align-self: center;
     margin-top: 10px;
@@ -368,10 +384,6 @@ button:hover {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 20px;
-}
-
-.contact-box a {
-    text-decoration: none;
 }
 
 .contact p {
