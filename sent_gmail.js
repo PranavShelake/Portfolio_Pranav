@@ -1,7 +1,7 @@
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form from submitting the traditional way
 
-    const serviceID = "service_d80h0fp"; // Replace with your service ID
+    const serviceID = "service_pv0693c"; // Replace with your service ID
     const templateID = "template_iiixeuk"; // Replace with your template ID
 
     const para = {
@@ -32,3 +32,4 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             alert('Failed to send your message.');
         });
 });
+
