@@ -172,12 +172,11 @@
 
 .skills-and-tool {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
+    font-size: 1.5rem;
     margin-bottom: 20px;
-}
-
-.skill {
-    width: 55%;
 }
 
 .tool {

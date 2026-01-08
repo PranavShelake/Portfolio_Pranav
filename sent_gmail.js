@@ -1,35 +1,78 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form from submitting the traditional way
+// document.getElementById('contact-form').addEventListener('submit', function(event) {
+//     event.preventDefault();
 
-    const serviceID = "service_pv0693c"; // Replace with your service ID
-    const templateID = "template_iiixeuk"; // Replace with your template ID
+//     // Replace these with YOUR actual IDs from EmailJS dashboard
+//     const serviceID = "service_vca6ew7";  // e.g., "service_abc123"
+//     const templateID = "template_483xyte"; // e.g., "template_xyz789"
 
-    const para = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("gmail").value,
-        message: document.getElementById("message").value
-    };
+//     const templateParams = {
+//         name: document.getElementById("name").value,
+//         email: document.getElementById("email").value,
+//         message: document.getElementById("message").value
+//     };
 
-    // Show loading indicator
-    document.getElementById('loading').style.display = 'block';
+//     document.getElementById('loading').style.display = 'block';
 
-    emailjs.send(serviceID, templateID, para)
-        .then((res) => {
-            // Hide loading indicator
-            document.getElementById('loading').style.display = 'none';
+//     emailjs.send(serviceID, templateID, templateParams)
+//         .then((response) => {
+//             document.getElementById('loading').style.display = 'none';
+//             document.getElementById("contact-form").reset(); // Cleaner way to reset
+//             console.log('SUCCESS!', response.status, response.text);
+//             alert("Your message has been sent successfully!");
+//         })
+//         .catch((error) => {
+//             document.getElementById('loading').style.display = 'none';
+//             console.error('FAILED...', error);
+//             alert('Failed to send message. Please try again or contact via email directly.');
+//         });
+// });
 
-            document.getElementById("name").value = "";
-            document.getElementById("gmail").value = "";
-            document.getElementById("message").value = "";
-            console.log('SUCCESS!', res.status, res.text);
-            alert("Your message has been sent successfully.");
-        })
-        .catch(err => {
-            // Hide loading indicator
-            document.getElementById('loading').style.display = 'none';
+console.log("✅ sent_gmail.js file loaded successfully!");
 
-            console.error('FAILED...', err);
-            alert('Failed to send your message.');
-        });
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("✅ DOM is ready!");
+    
+    const form = document.getElementById('contact-form');
+    console.log("✅ Form found:", form);
+    
+    if (!form) {
+        console.error("❌ ERROR: Contact form not found!");
+        return;
+    }
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        console.log("✅ Form submitted!");
+
+        const serviceID = "service_vca6ew7";
+        const templateID = "template_483xyte";
+
+        const templateParams = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value
+        };
+
+        console.log("🔍 CHECKING YOUR KEYS:");
+        console.log("Public Key (from init):", "MFEsOYxbuS6NM66xZ");
+        console.log("Service ID:", serviceID);
+        console.log("Template ID:", templateID);
+        console.log("Template Params:", templateParams);
+        console.log("---");
+
+        document.getElementById('loading').style.display = 'block';
+
+        emailjs.send(serviceID, templateID, templateParams)
+            .then((response) => {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById("contact-form").reset();
+                console.log('✅ SUCCESS!', response);
+                alert("Your message has been sent successfully!");
+            })
+            .catch((error) => {
+                document.getElementById('loading').style.display = 'none';
+                console.error('❌ FAILED...', error);
+                alert('Failed to send message: ' + error.text);
+            });
+    });
 });
-
